@@ -76,3 +76,34 @@ print(numeral)
 #In order to reverse a list using the .sort() method, one can input a "reverse=True" argument inside the method.
 numeral.sort(reverse= True)
 print(numeral)
+
+#The min() and max() functions show the least and greates values of intergers and floating point variables and the the first letter character comparisons for strings.
+print(f"The least value in the list is {min(numeral)}")
+print(f"The maximum value in the list is {max(numeral)}")
+
+#The sum() function adds all of the values inside a list.
+print(f"The sum of all of the numbers in the list numeral is equal to: {sum(numeral)}")
+
+#The .index() method takes in a argument, check if the argument is inside a list, and returns the index of your argument.
+print(f"apples in the list sort_Fruits is found on index: {sort_Fruits.index("apples")}")
+
+#The "in" operator checks if the argument a developer has set up is inside a given list and returns True or False
+print(f"is bananas in the list called sort_Fruits? {"bananas" in sort_Fruits}")
+
+#You can utilize a simple for loop statement using "in" in order to iterate over all the items inside the list and do however you want through each iteration.
+for i in sort_Fruits:
+    print(i)
+
+#Adding an enumerate() function would display the index of a given argument. A for loop or other kind of iterable is required in order to utilize it.
+
+subjects = ["Math", "English", "Filipino", "Science"]
+for i, j in enumerate(subjects, start = 1):
+    print(i, j)
+
+#The .join method takes in a string and joins all elements in a list with the string as the argument going in the middle of each element.
+subjects_Join = " ".join(subjects)
+print(subjects_Join)
+
+#The .split() method takes an argument of which are the separators present in a stirng, the separates each of them and converts it into a list.
+subjects_List = subjects_Join.split(" ")
+print(subjects_List)
