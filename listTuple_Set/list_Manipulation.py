@@ -40,6 +40,39 @@ print(fruits_One)
 #The .pop() method returns the last element that was removed.
 print(popped)
 
+#===================================================================================================
+
 print("""=====================================
-      Here is a simple algorithm that reverses a list using what has been discussed so far.""")
-print("The list is")
+      Here is a simple algorithm that reverses a list using what has been discussed so far.
+      The list contains the following elements: A B C D""")
+
+alphabet = ["A", "B", "C", "D"]
+alphabet_Reverse = []
+tracker = 0
+
+while True:
+    popped = alphabet.pop()
+    alphabet_Reverse.append(popped)
+    tracker += 1
+
+    if tracker == 4:
+        print(alphabet_Reverse)
+        break
+
+#Another method to reverse the order of the elements given a list is using the .reverse() method.
+colors = ["red", "blue", "green"]
+colors.reverse()
+print(colors)
+
+#The .sort() method sorts a string list alphabetically or intergers and floating point numbers in ascending order.
+sort_Fruits = ["bananas", "dragon fruit", "grapes", "apples"]
+sort_Fruits.sort()
+print(sort_Fruits)
+
+numeral = [91, 5, 455, 203, 784, 65, 45]
+numeral.sort()
+print(numeral)
+
+#In order to reverse a list using the .sort() method, one can input a "reverse=True" argument inside the method.
+numeral.sort(reverse= True)
+print(numeral)
