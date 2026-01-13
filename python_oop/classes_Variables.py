@@ -1,0 +1,1 @@
+#Class variables are simply variables inside a class. They are different from instance variables because instance variables are tied to both the instance of a class and the class itself. A class variable however is just tied to the class itself but not tied to an instance. You can verify this through the .__dict__ syntax.
