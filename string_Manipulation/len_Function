@@ -1,3 +1,0 @@
-message = "Hello! My name is Joseph Arenas!"
-
-print("The number of characters are:",len(message))
