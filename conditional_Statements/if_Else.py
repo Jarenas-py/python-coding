@@ -11,6 +11,8 @@ if False:
 else:
     print("The statement is False")
 
+#You can add the "elif" syntax multiple times in order to add multiple conditions.
+
 language = "HTML"
 if language == "python":
     print("The language is Python!")
