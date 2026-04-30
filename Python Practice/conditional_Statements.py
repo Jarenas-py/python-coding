@@ -46,6 +46,9 @@
 #If they type an item that doesn't exist, print "Item not found."
 
 balance = 0
+soda = 10
+chips = 10
+candy = 20
 
 while True:
     print("""\nWELCOME TO THE DIGITAL VENDING MACHINE!
@@ -63,12 +66,69 @@ Instructions: Enter a number to use the system.
                     balance = int(input("How much money would you like to insert in PHP?: "))
                     if balance >= 0:
                         print(f"""\nYour money has been deposited and your balance updated!
-Your current balance is: {balance}₱""")
+Your current balance is: {balance}$""")
                         break
                     else:
                         raise ValueError
                 except ValueError:
                     print("Please enter a valid positive amount.")
+
+        case "2":
+            while True:
+                try:
+                    print(f"""What will be your order?
+1. Soda: 2$ | {soda} left.
+2. Chips: 3$ | {chips} left.
+3. Candy: 1$ | {candy} left.""")
+                    food_decision = input("Option (1, 2, or 3): ")
+
+                    match food_decision:
+                        case "1":
+                            if balance >= 2:
+                                balance -= 2
+                                soda -= 1
+                                print(f"""Dispensing Soda...
+Current Balance: {balance}$
+Soda left: {soda}""")
+                                break
+                            else:
+                                print("Insufficient funds. Deposit new balance.")
+                                break
+
+                        case "2":
+                            if balance >= 3:
+                                balance -= 3
+                                chips -= 1
+                                print(f"""Dispensing Chips...
+Current Balance: {balance}$
+Chips left: {chips}""")
+                                break
+                            else:
+                                print("Insufficient funds. Deposit new balance.")
+                                break
+
+                        case "3":
+                            if balance >= 1:
+                                balance -= 1
+                                soda -= 1
+                                print(f"""Dispensing Candy...
+Current Balance: {balance}$
+Candy left: {candy}""")
+                                break
+                            else:
+                                print("Insufficient funds. Deposit new balance.")
+                                break
+
+                        case _:
+                            raise ValueError
+                except ValueError:
+                    print("Error: Invalid menu choice. Pick within 1, 2, or 3 only!")
+                    continue
+
+        case "3":
+            print("""Thank you for using the Digital Vending Machine!
+Powering Off...""")
+            break
 
         case _:
             print("\nInvalid menu choice")
