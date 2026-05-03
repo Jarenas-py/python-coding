@@ -19,7 +19,6 @@ print(courses)
 
 tickets = ["Printer Jam", "Password Reset", "Network Down"]
 transferred_tickers = ["Email Sync Issue", "Update OS"]
-new_tickets = []
 
 tickets = tickets[:2]
 print(tickets)
