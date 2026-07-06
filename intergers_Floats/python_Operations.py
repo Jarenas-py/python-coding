@@ -26,7 +26,9 @@ print(f"5 ÷ 2= {floor_Quotient}")
 modulus_Quotient= 5 % 2
 print(f"5 ÷ 2= {modulus_Quotient}")
 
-#Shorthand operations is a more versatile way to apply operations on a value that has variable and returning the result back to the same variable. Given the example, shorthand_Sum has a value of 1. Applying the shorthand operation would apply that operation and value to the value of shorthand_Sum and update shorthand_Sum.
+#Shorthand operations is a more versatile way to apply operations on a value that has variable
+#  and returning the result back to the same variable. Given the example, shorthand_Sum has a value of 1. 
+# Applying the shorthand operation would apply that operation and value to the value of shorthand_Sum and update shorthand_Sum.
 
 shorthand_Sum = 1
 shorthand_Sum += 1

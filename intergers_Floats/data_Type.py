@@ -8,3 +8,11 @@ print(type(numeral_Two))
 
 numeral_Three = "This is a string."
 print(type(numeral_Three))
+
+print("\n")
+
+test1 = True
+test2 = False
+test3 = 3.16195265
+test4 = "test"
+test5 = 12
