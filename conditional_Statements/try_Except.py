@@ -1,4 +1,5 @@
-#The try-except conditional takes in a line of code with potential error and moves that line of code to the except case in order to handle the error that was in the try block.
+#The try-except conditional takes in a line of code with potential error and moves 
+# that line of code to the except case in order to handle the error that was in the try block.
 
 try:
     num_test = int(input("Enter a number to divide: "))
@@ -7,7 +8,8 @@ try:
 except ZeroDivisionError:
     print("This is not a valid output.")
 
-#A developer can utilize a raise in order to raise a ValueError in concjunction with if else statements in order for a developer to tailor their exception catching.
+#A developer can utilize a raise in order to raise a ValueError in concjunction with 
+# if else statements in order for a developer to tailor their exception catching.
 
 while True:
     print("Hello World!")

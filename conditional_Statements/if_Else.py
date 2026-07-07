@@ -21,7 +21,11 @@ elif language is "HTML":
 else:
     print("There is no match :(")
 
-#There are other comparison operators that can be utilized instead of "==" but only to a certain extent ">" and etc... through the form of "and", "or",  "is", and "not". The "is" acts like a "=='. The "and" STRICTLY considers both of the values of the compared variables. The "or" only considers either one of the values only to be true and lastly "not" changes the boolean value of a given variable.
+#There are other comparison operators that can be utilized instead of "==" but only to
+#  a certain extent ">" and etc... through the form of "and", "or",  "is", and "not". 
+# The "is" acts like a "=='. The "and" STRICTLY considers both of the values of the 
+# compared variables. The "or" only considers either one of the values only to be true 
+# and lastly "not" changes the boolean value of a given variable.
 
 user = "Admin"
 logged_in = "True"
