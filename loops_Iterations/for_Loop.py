@@ -1,4 +1,6 @@
-#The for loop statement iterates given a data store. In this specific instance, "num" is the variable that trackes each iteration of the loop and stops if there is no more to iterate anymore.
+#The for loop statement iterates given a data store. In this specific instance,
+#  "num" is the variable that tracks each iteration of the loop and stops if 
+# there is no more to iterate anymore.
 
 nums = [1, 2, 3, 4, 5]
 for num in nums:
