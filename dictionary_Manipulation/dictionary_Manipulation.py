@@ -3,13 +3,17 @@
 student = {"Name" : "Nathan", "Age" : 23, "Courses" : ["Networking", "Assembly", "Data Structures and Algorithms"]}
 print(student)
 
+university = {"Name" : "TUP", "Location" : "Manila", "Courses" : ["BSIT", "BSCS", "BSIS"]}
+print(university)
+
 print(f"The student's name is {student["Name"]}")
 print(f"Nathan is {student["Age"]} years old.")
 
 courses = ", ".join(student["Courses"])
 print(f"Nathan is currently taking up {courses}")
 
-#Given a key that does not exist, if you utilize the usual method for accessing a value given a key in a dictionary, you will get a traceback error. In order to prevent this, one can use the .get() method in order to return "None" if a key does not exist in a given dictionary.
+#Given a key that does not exist, if you 
+# utilize the usual method for accessing a value given a key in a dictionary, you will get a traceback error. In order to prevent this, one can use the .get() method in order to return "None" if a key does not exist in a given dictionary.
 
 print(f"{student.get("Address")}")
 
@@ -67,3 +71,25 @@ removed_apps = phone.pop("Apps")
 print(removed_apps)
 
 print(phone.keys())
+
+print("\n======================testing stuff ======================================")
+university = {"Name" : "TUP", "Location" : "Manila", "Courses" : ["BSIT", "BSCS", "BSIS"]}
+print(university)
+courses = ", ".join(university["Courses"])
+print(courses)
+
+print("\n")
+print(f"Nigger is taking up the following courses: {courses}")
+
+print(university.get("Address"), "Key does not exist.")
+university["Name"] = "DLSU"
+print(university)
+
+print("\n")
+citizen = {"Name" : "null", "Age" : 0, "University" : "null"}
+
+while True:
+    try:
+        pangalan = input("Enter First Name: ")
+        if pangalan 
+
