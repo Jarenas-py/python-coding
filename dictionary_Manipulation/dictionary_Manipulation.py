@@ -128,9 +128,10 @@ print(university)
 
 print("\n")
 citizen = {"Name" : "null", "Age" : 0, "University" : "null"}
-
-while True:
-    try:
-        pangalan = input("Enter First Name: ")
-        if pangalan 
-
+citizenKeys = citizen.keys()
+citizenValues = citizen.values()
+citizenItems = citizen.items()
+print(f"""
+Keys: {citizenKeys}
+Values: {citizenValues}
+Items: {citizenItems}""")
