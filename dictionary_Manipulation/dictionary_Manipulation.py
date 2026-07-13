@@ -28,6 +28,47 @@ print(student)
 student.update({"Name" : "Choy", "Age" : "19", "Phone" : "1223-123-1121"})
 print(student)
 
+print("\n=========.update() Function Practice===============")
+citizen = {"Name" : "null", "Age" : 0, "University" : "null"}
+
+while True:
+    try:
+        pangalan = input("Enter First Name: ")
+        pangalan_test = int(pangalan)
+
+    except ValueError:
+        break
+
+    else:
+        print("Error: Entered invalid input")
+        continue
+
+while True:
+    try:
+        gulang = int(input("Enter your age: "))
+        break
+
+    except ValueError:
+        print("Error: Invalid string input detected!")
+        continue
+
+while True:
+    try:
+        uni_pangalan = input("Enter University Name: ")
+        uni_pangalan_test = int(uni_pangalan)
+
+    except ValueError:
+        break
+
+    else:
+        print("Error: Entered invalid input")
+        continue
+
+citizen.update({"Name" : pangalan, "Age" : gulang, "University" : uni_pangalan})
+print(citizen)
+
+print("\n")
+
 #The del function deletes a key with its value inside the argument.
 del student["Phone"]
 print(student)
