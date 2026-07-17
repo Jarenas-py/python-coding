@@ -1,4 +1,5 @@
-print("Programming","Essentials","in", sep = "***", end = "...")
-print("Python")
+from platform import platform
 
-#Programming***Essentials***in...Python
+print(platform())
+print(platform(1))
+print(platform(0, 1))
