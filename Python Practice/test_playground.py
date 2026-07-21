@@ -1,5 +1,4 @@
-from platform import platform
-
-print(platform())
-print(platform(1))
-print(platform(0, 1))
+from random import randint
+    
+for i in range(2):
+   print(randint(1, 2), end='')
