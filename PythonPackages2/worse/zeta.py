@@ -1,0 +1,2 @@
+def FunZ():
+    return "zeta"

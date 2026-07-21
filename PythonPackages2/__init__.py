@@ -1,0 +1,1 @@
+from .worse.zeta import FunZ
