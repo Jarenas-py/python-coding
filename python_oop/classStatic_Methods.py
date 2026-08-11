@@ -38,6 +38,26 @@ print("\n\n")
 # one must also be aware of the difference of a normal
 # constructor and an alternative constructor.
 
+# A normal constructor refers to a method that every 
+# class has that has a set argument format. It's
+# basically __init__ method in python Classes and
+# even if one never explicitly codes them on the
+# start of a class, an empty one is created. A 
+# normal constructor is basically built-in to be 
+# made in python.
+
+# An alternative constructor on another hand is a
+# user defined method (manually made method that
+# is not built in in python) that takes in a value
+# that is not in accordance to the argument structure
+# of __init__. In this instance, an input "05-22-05",
+# which is not in accordance with the __init__
+# argument structure of "month", "day", and "year",
+# is taken in as the input argument as "input" in 
+# the class method "fullDate". The "cls" argument
+# refers to the class itself. The class method, 
+# updates the class after it has done the .split
+# function.
 
 
 class classMethod():
@@ -54,3 +74,9 @@ class classMethod():
 userInput = input("Enter date: ")
 testclassMethod = classMethod.fullDate(userInput)
 print(f"{testclassMethod.month} {testclassMethod.day} {testclassMethod.year}")
+print("\n\n")
+
+#=========================================================
+
+#Static Methods
+#
