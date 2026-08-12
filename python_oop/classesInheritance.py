@@ -42,4 +42,3 @@ class Subaru(Ford):
 
 car3 = Subaru("Impreza", "Blue", "1999", "800000", "500000")
 print(car3.subaruReturn())
-
