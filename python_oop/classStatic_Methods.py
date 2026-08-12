@@ -79,4 +79,31 @@ print("\n\n")
 #=========================================================
 
 #Static Methods
-#
+# A common use case for static methods are simply for
+# function. When a method would just purely do a 
+# function, when a simple argument is needed for it 
+# to do a job, utilize static methods. Instead of making
+# it a function outside, just pair it in with methods
+# of similar function inside the class. This 
+# example would just show however how to create a static
+# method. 
+
+class TemperatureConverter:
+    def __init__(self, unit):
+        self.unit = unit
+
+    @staticmethod
+    def celsius_to_fahrenheit(celsius):
+        return (celsius * 9/5) + 32
+
+    @staticmethod
+    def fahrenheit_to_celsius(fahrenheit):
+        return (fahrenheit - 32) * 5/9
+
+    @staticmethod
+    def is_valid_celsius(value):
+        return value >= -273.15
+
+print(TemperatureConverter.celsius_to_fahrenheit(100))
+print(TemperatureConverter.fahrenheit_to_celsius(100))
+print(TemperatureConverter.fahrenheit_to_celsius(50))
