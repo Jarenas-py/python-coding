@@ -27,3 +27,8 @@ class Person:
 instance1 = Person("Joseph", "Arenas")
 print(instance1)
 
+# Python has multiple dunder methods and listing them
+# here would be quite too long for notes. the following
+# link redirects you to a list of dunder methods in python.
+
+# https://www.pythonmorsels.com/every-dunder-method/
