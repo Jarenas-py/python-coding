@@ -15,7 +15,7 @@ quotient = 5 / 2
 print(f"5 ÷ 2= {quotient}")
 
 #Exponent
-product_Exponent = 3 * 2
+product_Exponent = 3 ** 2
 print(f"3^2= {product_Exponent}")
 
 #Floor Division: Divides but removes the decimal.
