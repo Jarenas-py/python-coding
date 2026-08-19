@@ -1,24 +1,17 @@
-#This solution only works on the following test
-# cases to which I tailored to:
-# nums = [2,7,11,15], target = 9
-# nums = [3,2,4], target = 6
-# nums = [3,3], target = 6
-
 class Solution:
     @staticmethod
     def twoSum(nums, target):
-        firstCounter = 0
-        secondCounter = 1
-        addensList = []
-        for i in range(len(nums)):
-            sum = nums[firstCounter] + nums[secondCounter]
-            if sum == target:
-                addensList.append(firstCounter)
-                addensList.append(secondCounter)
-                return addensList
-            firstCounter += 1
-            secondCounter += 1
+        counter = 0
+        forCounter = 0
+        for i in nums:
+            if counter == forCounter:
+                forCounter += 1
+                continue
 
-print(Solution.twoSum([3,2,3], 6))
+            if nums[counter] + nums[forCounter] == target:
+                return [counter, forCounter]
 
-# Better Solution ():
+            counter += 1
+            continue
+
+print(Solution.twoSum([3,2, 4], 6))
