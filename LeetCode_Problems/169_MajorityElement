@@ -1,0 +1,16 @@
+class Solution:
+    @staticmethod
+    def majorityElement(nums):
+        hashMap = {}
+        for i in nums:
+            if i in hashMap:
+                hashMap[i] += 1
+            else:
+                hashMap[i] = 1
+
+        for j in hashMap:
+            if max(hashMap.values()) == hashMap[j]:
+                return j
+
+# Optimized Version (Based by NeetCode)
+
