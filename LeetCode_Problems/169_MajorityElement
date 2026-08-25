@@ -12,5 +12,6 @@ class Solution:
             if max(hashMap.values()) == hashMap[j]:
                 return j
 
-# Optimized Version (Based by NeetCode)
-
+# The following codebase reflects the optimized logic
+# with regards to the problem. There is no need for 
+# an optimized version by NeetCode.
