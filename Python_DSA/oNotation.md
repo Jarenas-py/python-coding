@@ -237,6 +237,7 @@ def create_board(n):
 
 4. **Logarithmic Time O(log n)**
 - Algorithm memory size grows slowly as input size is shortened.
+- Usually algorithms with recursion are logarithmic time. 
 
 **Example:**
 ```python
