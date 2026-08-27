@@ -104,7 +104,7 @@ large size). When applied at the aforementioned function, 500n and 2n is inconse
 n^2 is so large, the remaining two terms are like ants compared to the highest scaling term.
 
 #### Time Complexity Cheat Sheet
-1. **Constant Complexity O(1)**
+1. **Constant Time O(1)**
 - Algorithm has no loops.
 - Refers to a complexity wherein the algorithm does not care for the number of inputs.
 It will always execute at one pass given any input. 
@@ -163,3 +163,93 @@ def addAll(nums):
 ```
 
 4. **Logarithmic Time O(log n)**
+- Before learning about what logarithmic time is, one must first be familiarized
+on what a **logarithm** is.
+- **Logarithm** is simply the inverse of an exponent. If an exponent tells one 
+the result of a base after multiplying it n times. A logarithm presents how many
+times it is needed for a divisor to be divided by the given base until the divisor
+becomes 1.
+- Given the definition of a logarithm, a logarithmic time refers to an algorithm
+whose input n is divided at each iteration until the output is found.
+- Algorithm halves the input size at each iteration or increases iteration size
+at every iteration.
+
+**Example 1:**
+```python
+def dividing_loop(n):
+    while n > 1:
+        print(n)
+        n = n // 2  
+```
+
+**Example 2:**
+```python
+def doubling_loop(n):
+    i = 1
+    while i < n:
+        print(i)
+        i = i * 2   
+```
+
+#### Space Complexity Cheat Sheet
+1. **Constant Space O(1)**
+- Algorithm's memory space does not grow with input size.
+
+**Example:**
+```python
+def find_maximum(arr):
+    max_val = arr[0] 
+    
+    for num in arr:
+        if num > max_val:
+            max_val = num
+    return max_val
+```
+
+2. **Linear Time O(n)**
+- Algorithm's memory space grows in a linear matter as input size grows.
+
+**Example:**
+```python
+def get_unique_numbers(arr):
+    seen = set() 
+    
+    for num in arr:
+        seen.add(num)
+    return list(seen)
+```
+
+3. **Quadratic Time O(n^2)**
+- Algorithim memory size grows exponentially as input size grows.
+
+**Example:**
+```python
+def create_board(n):
+    board = []
+    
+    for i in range(n):
+        row = []
+        for j in range(n):
+            row.append(0)
+        board.append(row)
+    return board
+```
+
+4. **Logarithmic Time O(log n)**
+- Algorithm memory size grows slowly as input size is shortened.
+
+**Example:**
+```python
+def recursive_binary_search(arr, target, left, right):
+    if left > right:
+        return False
+        
+    mid = (left + right) // 2
+    
+    if arr[mid] == target:
+        return True
+    elif arr[mid] < target:
+        return recursive_binary_search(arr, target, mid + 1, right) 
+    else:
+        return recursive_binary_search(arr, target, left, mid - 1)
+```
