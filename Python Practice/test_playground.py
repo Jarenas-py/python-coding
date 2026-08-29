@@ -1,9 +1,12 @@
-def F(n):
-    if n <= 1:
-        return n
+num = 38
+output = 0
+numString = str(num)
+while len(str(output)) == 1:
+    for i in numString:
+        i = int(i)
+        output += i
 
-    oneBack = F(n-1)
-    twoBack = F(n-2)
-    return oneBack + twoBack
-
-print(F(2))
+    numString = str(output)
+    print(output)
+    continue
+print(output)
