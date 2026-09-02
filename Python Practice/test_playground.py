@@ -1,4 +1,1 @@
-class Solution:
-    def addDigits(num):
-        while True:
-            pass
+#this is a test commit
