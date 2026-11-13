@@ -80,3 +80,43 @@ print(instance1.two_check())
 * If the sum is too large, move the right pointer to the left to try a smaller number.
 * If the sum is too small, move the left pointer to the right to try a larger number.
 * Repeat until the sum matches the target or no valid pairs remain.
+
+### Example 3
+* **Example 3: Given two sorted integer arrays arr1 and arr2, return a new array that combines both of them and is also sorted.**
+
+#### Solution
+```python
+class Sorter:
+    def __init__(self, arr1, arr2):
+        self.arr1 = arr1
+        self.arr2 = arr2
+
+    def arrange(self):
+        pointer1 = pointer2 = 0
+        ans = []
+
+        while pointer1 < len(self.arr1) and pointer2 < len(self.arr2):
+            if self.arr1[pointer1] < self.arr2[pointer2]:
+                ans.append(self.arr1[pointer1])
+                pointer1 += 1
+            else:
+                ans.append(self.arr2[pointer2])
+                pointer2 += 1
+        while pointer1 < len(self.arr1):
+            ans.append(self.arr1[pointer1])
+            pointer1 += 1
+
+        while pointer2 < len(self.arr2):
+            ans.append(self.arr2[pointer2])
+            pointer2 += 1
+
+        return ans
+
+instance1 = Sorter([1, 4, 7, 20], [3, 5, 6])
+print(instance1.arrange())
+```
+
+#### Explanation
+- **Compare the smallest remaining elements** of both sorted arrays. Add the smaller value to the result.
+- **Move the pointer forward** in the array from which the smaller value was taken. Repeat until one array is exhausted.
+- **Append the remaining elements** of the other array directly to the result since they are already sorted.
